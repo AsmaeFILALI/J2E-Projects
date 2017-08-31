@@ -12,11 +12,11 @@ import org.springframework.stereotype.Component;
 public  class InfoCoreImpl implements InfoCore {
 
 
-    //@Autowired
-    //@Qualifier("infoDao")
-    //InfoDao infoDao;
+    @Autowired
+    @Qualifier("infoDao")
+    InfoDao infoDao;
 
     public String getInfo() {
-        return "Test info Spring";
+        return infoDao.gethello();
     }
 }
