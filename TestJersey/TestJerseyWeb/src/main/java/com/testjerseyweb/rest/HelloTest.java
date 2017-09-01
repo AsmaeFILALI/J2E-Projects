@@ -20,9 +20,18 @@ public class HelloTest  {
 
         @GET
         @Path("/hello")
-        public Response savePayment() {
+        public Response getHello() {
 
             return Response.status(200).entity(infoCore.getInfo()).build();
+
+
+    }
+
+    @GET
+    @Path("/book")
+    public Response getBook() {
+
+        return Response.status(200).entity(infoCore.getBook().getId().toString()).build();
 
 
     }

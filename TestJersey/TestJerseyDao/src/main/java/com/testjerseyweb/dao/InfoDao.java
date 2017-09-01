@@ -1,16 +1,8 @@
-
 package com.testjerseyweb.dao;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import com.testjerseyweb.dao.Entity.BookEntity;
 
-import java.io.Serializable;
-
-
-@Repository("infoDao")
-public class InfoDao  {
-
-    public String gethello(){
-        return "hello :)";
-    }
+public interface InfoDao extends CrudRepository<BookEntity,Long>{
+    public String gethello();
 }

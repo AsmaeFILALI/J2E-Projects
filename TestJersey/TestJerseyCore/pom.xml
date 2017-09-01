@@ -29,35 +29,20 @@
         </plugins>
     </build>
 
-    <properties>
-        <spring-data.version>Gosling-RELEASE</spring-data.version>
-    </properties>
 
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-releasetrain</artifactId>
-                <version>${spring-data.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
 
-    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>TestJerseyDao</groupId>
             <artifactId>TestJerseyDao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
+            <groupId>TestJerseyCommon</groupId>
+            <artifactId>TestJerseyCommon</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-
     </dependencies>
 
 

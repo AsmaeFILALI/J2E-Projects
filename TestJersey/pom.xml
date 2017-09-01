@@ -7,8 +7,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>TestJerseyDao</module>
+        <module>TestJerseyCommon</module>
         <module>TestJerseyCore</module>
         <module>TestJerseyWeb</module>
+
     </modules>
 
     <packaging>pom</packaging>
